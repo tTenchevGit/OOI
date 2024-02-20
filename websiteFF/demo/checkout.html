@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Checkout - Winner Gaming Chair</title>
+    <style>
+        body {
+            background-image: url('checkout_background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Your navigation menu here -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="checkout">
+            <h2>Checkout</h2>
+            <form id="paymentForm">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" required>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required>
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="month" id="expiryDate" required>
+                <label for="fullName">Name:</label> <!-- Updated label text -->
+                <input type="text" id="fullName" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('https://cdn.zivada.bg/images/0/b38da1884312bcab/2/so-divine-pash-ribbed-vibrator.jpg?hash=-1231064744') center/cover no-repeat;
+    transition: background 0.5s ease; /* Smooth transition for background image change */
+    color: #333;
+  }
+  
+  header {
+    background-color: #ff4081;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-details {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4081;
+  }
+  
+  .buy-button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #d81b60;
+  }
+  
+  .features {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Feedback form styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .feedback-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .feedback-form button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #d81b60;
+  }
+  
+  /* Updated styles for the "Take Money" form */
+  .take-money-form {
+    background: url('https://img.freepik.com/free-vector/realistic-glass-effect-credit-card_52683-74368.jpg?w=740&t=st=1702514480~exp=1702515080~hmac=08b6af2563a5e67522c52b41a158bd40422a3ae5939c416c7b5a4801092b57b6') center/cover no-repeat; /* Replace 'take-money-background.jpg' with your actual background image */
+    color: #fff; /* Text color on top of the background image */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .take-money-form h2 {
+    margin-bottom: 20px;
+    color: #ffffff; /* Title color on top of the background image */
+  }
+  
+  .take-money-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff; /* Label color on top of the background image */
+  }
+  
+  .take-money-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .take-money-form button {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .take-money-form button:hover {
+    background-color: #d81b60;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+    }
+  }
+  

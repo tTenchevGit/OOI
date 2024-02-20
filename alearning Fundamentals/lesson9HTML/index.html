@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Streaming Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">My Streaming Service</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#tvShows">TV Shows</a></li>
+                <li><a href="#myList">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Streaming Service</h1>
+            <p>Unlimited streaming of movies, TV shows, and more.</p>
+            <button onclick="showSignupModal()">Start Your Free Trial</button>
+        </div>
+    </section>
+
+    <!-- Movie Section -->
+    <section class="movies" id="movies">
+        <h2>Popular Movies</h2>
+        <div class="movie-container">
+            <!-- Dummy movie cards -->
+            <div class="movie-card">Movie 1</div>
+            <div class="movie-card">Movie 2</div>
+            <div class="movie-card">Movie 3</div>
+            <!-- Add more movie cards as needed -->
+        </div>
+    </section>
+
+    <!-- TV Shows Section -->
+    <section class="tv-shows" id="tvShows">
+        <h2>Popular TV Shows</h2>
+        <div class="tv-show-container">
+            <!-- Dummy TV show cards -->
+            <div class="tv-show-card">TV Show 1</div>
+            <div class="tv-show-card">TV Show 2</div>
+            <div class="tv-show-card">TV Show 3</div>
+            <!-- Add more TV show cards as needed -->
+        </div>
+    </section>
+
+    <!-- My List Section -->
+    <section class="my-list" id="myList">
+        <h2>My List</h2>
+        <div class="my-list-container">
+            <!-- Dummy content in My List -->
+            <div class="my-list-item">My List Item 1</div>
+            <div class="my-list-item">My List Item 2</div>
+            <!-- Add more My List items as needed -->
+        </div>
+    </section>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+            <h2>Sign Up for Your Free Trial</h2>
+            <!-- Add signup form here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 My Streaming Service. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

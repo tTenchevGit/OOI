@@ -1,0 +1,33 @@
+<!-- confirmation.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation - DIDO's Vibrator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="confirmation.js"></script>
+</head>
+<body class="confirmation">
+  <div class="confirmation-container">
+    <h2>Confirmation Page</h2>
+    <div id="confirmationCodeContainer">
+      <label for="confirmationCode">Confirmation Code:</label>
+      <input type="text" id="confirmationCode" maxlength="100" pattern="\d{1,100}" required>
+    </div>
+    <div id="timerContainer">
+      <p>Time Remaining:</p>
+      <div id="timer">5:00</div>
+    </div>
+    <form id="confirmationForm" onsubmit="handleConfirmationSubmission(); return false;">
+      <button type="submit">Submit Confirmation</button>
+    </form>
+    
+    <!-- "Thank you" message container -->
+    <div id="thankYouMessage" style="display: none;">
+      <h3>Thank you for submitting your order!</h3>
+    </div>
+  </div>
+</body>
+</html>
