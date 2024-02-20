@@ -1,0 +1,10 @@
+const solve = (output) => {
+    let a = 5
+    let b = 8
+    if(a > b){
+        console.log('yes')
+    } else {
+        console.log('No!')
+    }
+}
+solve()
