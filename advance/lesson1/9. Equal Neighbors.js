@@ -3,7 +3,7 @@ function neigbours(matrix) {
 
     matrix.forEach((row, i) => {
         row.forEach((el, j) => {
-            if (el === row[j + 1]) {
+            if (el === row[j + 1]) { // find the neigbours, left and right on the same row
                 pairs++;
             }
             if (matrix[i + 1] && el === matrix[i + 1][j]) { // find the neigbouts from the row above and bellow
