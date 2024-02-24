@@ -6,10 +6,10 @@ function neigbours(matrix) {
             if (el === row[j + 1]) {
                 pairs++;
             }
-            if (matrix[i + 1] && el === matrix[i + 1][j]) {
+            if (matrix[i + 1] && el === matrix[i + 1][j]) { // find the neigbouts from the row above and bellow
                 pairs++
             }
-            if (matrix[i + 1] && (el === matrix[i + 1][j - 1] || el === matrix[i + 1][j + 1])) {
+            if (matrix[i + 1] && (el === matrix[i + 1][j - 1] || el === matrix[i + 1][j + 1])) { // find the diagonal neighbours
                 pairs++
             }
         });
