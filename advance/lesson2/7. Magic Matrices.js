@@ -15,7 +15,7 @@ function magic(matrix) {
     
     const allSame = sum.every(element => console.log(element === sum[0]));
 
-    // console.log(allSame);
+
 }
 magic([[4, 5, 6],
     [6, 5, 4],
