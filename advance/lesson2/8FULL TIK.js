@@ -1,68 +1,83 @@
-function checkWinner(board) {
-    // Check rows and columns
-    for (let i = 0; i < 3; i++) {
-        if (board[i][0] && board[i][0] === board[i][1] && board[i][0] === board[i][2]) {
-            return board[i][0];
+function ticTacToe(input) {
+    let matrix = [[false, false, false], [false, false, false], [false, false, false]];
+    let player = 'X';
+    let gameEnded = false;
+
+    for (let line of input) {
+        if (!gameEnded) {
+            let [row, col] = line.split(" ").map(num => Number(num));
+            if (!matrix[row][col]) {
+                matrix[row][col] = player;
+                if (ifWins(matrix, player)) {
+                    console.log(`Player ${player} wins!`);
+                    gameEnded = true;
+                    console.log(`${matrix[0].join('\t')}\n${matrix[1].join('\t')}\n${matrix[2].join('\t')}`);
+                    break;
+                } else if (matrix.every(row => row.every(el => el !== false))) {
+                    console.log(`The game ended! Nobody wins :(`);
+                    console.log(`${matrix[0].join('\t')}\n${matrix[1].join('\t')}\n${matrix[2].join('\t')}`);
+                    gameEnded = true;
+                    break;
+                }
+                player = player === 'X' ? 'O' : 'X'; 
+            } else {
+                console.log("This place is already taken. Please choose another!");
+            }
         }
-        if (board[0][i] && board[0][i] === board[1][i] && board[0][i] === board[2][i]) {
-            return board[0][i];
+    }
+
+    function ifWins(matrix, player) {
+        for (let i = 0; i < 3; i++) {
+            if ((matrix[i][0] === player &&
+                matrix[i][1] === player &&
+                matrix[i][2] === player)
+                || ((matrix[0][i] === player &&
+                    matrix[1][i] === player &&
+                    matrix[2][i] === player)
+                    || (matrix[0][0] === player &&
+                        matrix[1][1] === player &&
+                        matrix[2][2] === player)
+                    || (matrix[0][2] === player &&
+                        matrix[1][1] === player &&
+                        matrix[2][0] === player))) {
+                return true;
+            }
         }
-    }
-    // Check diagonals
-    if (board[0][0] && board[0][0] === board[1][1] && board[0][0] === board[2][2]) {
-        return board[0][0];
-    }
-    if (board[0][2] && board[0][2] === board[1][1] && board[0][2] === board[2][0]) {
-        return board[0][2];
-    }
-    return null;
-}
-
-function printBoard(board) {
-    for (let i = 0; i < 3; i++) {
-        console.log(board[i].map(cell => cell ? cell : '_').join('\t'));
-    }
-}
-
-function ticTacToe(moves) {
-    const board = [[false, false, false], [false, false, false], [false, false, false]];
-    let currentPlayer = 'X';
-    let movesLeft = 9;
-
-    for (let i = 0; i < moves.length; i++) {
-        const [row, col] = moves[i];
-        if (board[row][col]) {
-            console.log("This place is already taken. Please choose another!");
-            return;
-        }
-        board[row][col] = currentPlayer;
-        movesLeft--;
-
-        const winner = checkWinner(board);
-        if (winner) {
-            console.log(`Player ${winner} wins`);
-            printBoard(board);
-            return;
-        }
-
-        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    }
-
-    if (movesLeft === 0) {
-        console.log("The game ended! Nobody wins :(");
+        return false;
     }
 }
 
-// Example usage:
-const moves = ["0 1",
+// ticTacToe([
+//     "0 0",
 
-"0 0",
+// "0 0",
 
-"0 2",
+// "1 1",
 
-"2 0",
+// "0 1",
 
-"1 0",
+// "1 2",
 
-"1 2", ] 
-ticTacToe(moves);
+// "0 2",
+
+// "2 2",
+
+// "1 2",
+
+// "2 2",
+
+// "2 1"
+// ]);
+
+ticTacToe([
+    "0 1",
+    "0 0",
+    "0 2",
+    "2 0",
+    "1 0",
+    "1 2",
+    "1 1",
+    "2 1",
+    "2 2",
+    "0 0"
+]);
