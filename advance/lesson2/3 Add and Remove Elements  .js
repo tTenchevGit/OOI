@@ -7,7 +7,7 @@ function addRemove(array) {
         } else {
             result.pop();
         }
-        count++
+        count++;
     });
     result.length === 0 ? console.log('Empty') : console.log(result.join('\n'));
 }
