@@ -3,10 +3,11 @@ function hero(input) {
 
     input.forEach(x => {
         let [name, level, items] = x.split(' / '); 
+        items = items ? items.split(', '): []
         let obj = {
             name: name,
             level: Number([level]),
-            items: items.split(', ')
+            items: items
         }
 
         resultArr.push(obj);
