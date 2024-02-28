@@ -2,19 +2,14 @@ function hero(input) {
     let resultArr = [];
 
     input.forEach(x => {
-        let heroData = x.split(/ \/ |, /); 
-     
-        let result = {
-            name: heroData[0],
-            level: Number(heroData[1]),
-            items: []
-      };
-
-        if (heroData.length > 2) {
-            result.items = heroData.slice(2);
+        let [name, level, items] = x.split(' / '); 
+        let obj = {
+            name: name,
+            level: Number([level]),
+            items: items.split(', ')
         }
 
-        resultArr.push(result);
+        resultArr.push(obj);
      });
 
     let json = JSON.stringify(resultArr);
