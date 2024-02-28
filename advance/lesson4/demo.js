@@ -12,7 +12,7 @@ function jsonToHtmlTable(input) {
     return html;
 }
 
-// Test the function
+
 let input = [
     '{"name":"John","position":"Developer","salary":1000}',
     '{"name":"Jane","position":"Designer","salary":2000}',
