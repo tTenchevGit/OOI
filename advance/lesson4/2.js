@@ -2,7 +2,7 @@ function html(input) {
     let html = "<table> ";
     input.forEach(json => {
         let obj = JSON.parse(json);
-        html += `\n       <tr> \n           <td>${obj.name}</td>\n           <td>${obj.position}</td>\n           <td>${Number(obj.salary)}</td>\n       </tr>`
+        html += `\n\t<tr>\n\t\t<td>${obj.name}</td>\n\t\t<td>${obj.position}</td>\n\t\t<td>${Number(obj.salary)}</td>\n\t</tr>`
     });
     html += "\n</table>"
     console.log(html);
