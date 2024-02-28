@@ -6,13 +6,11 @@ class Towns{
     }
 }
 function arrayToObjectInClass(array){
-    let storredObj = [];
-    array.map((x, i) =>{
+    
+    array.forEach((x) =>{
         let [town, latitude, longitude] = x.split(" | ");
-        let townInfo = new Towns(town, Number(latitude).toFixed(2), Number(longitude).toFixed(2))
-        storredObj.push(townInfo);
-        console.log(storredObj[i])
-        
+        const townInfo = new Towns(town, Number(latitude).toFixed(2), Number(longitude).toFixed(2))
+        console.log(townInfo);
     })
 }
 arrayToObjectInClass(['Sofia | 42.696552 | 23.32601',
