@@ -21,13 +21,9 @@ function invetory(inStock, ordered) {
             resultObject[name] = quantity;
         }
     });
-    // for (let i = 0; i < checkInOrder.length; i += 2) {
-    //     let name = checkInOrder[i];
-    //     let quantity = Number(checkInOrder[i + 1]);
-    //     resultObject[name] = quantity;
-    // }
+   
     for (const key in resultObject) {
-        //let itemQuantity = resultObject[key];
+       
         console.log(`${key} -> ${resultObject[key]}`);
     }
 }
