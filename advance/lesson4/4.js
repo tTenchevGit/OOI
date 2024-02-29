@@ -11,15 +11,13 @@ function findNumber(input) {
         }
     });
     let result = Object.entries(obj);
-    result.forEach(group => {
-        console.log(group[0]);
-        group[1].forEach(item => {
-            console.log(item);
+    result.forEach(x => {
+        console.log(x[0]);
+        x[1].forEach(item => {
+            console.log(`  ${item}`);
         });
     });
 
-
-    
 }
 
 findNumber(['Appricot : 20.4',
