@@ -3,7 +3,7 @@ function findNumber(input) {
     let firstLetter = [];
     for (const line of input.split("\n")) {
         let [product, price] = line.split(" : ");
-        //workArr.push([product, Number(price)])
+        
         storedObjects[product] = Number(price)
     }
     let sorted = Object.keys(storedObjects).sort();
@@ -12,7 +12,7 @@ function findNumber(input) {
             firstLetter.push(key.charAt(0).toUpperCase());
     }
     firstLetter.sort((a, b) => a[0].localeCompare(b[0], 'en', { sensitivity: 'base' }));
-    // console.log(firstLetter);
+    
     let result = ''
     for (const letter of firstLetter) {
         result += `${letter}\n`;
