@@ -1,7 +1,7 @@
-let hui = 'asdadsa adaqw da aw'
+let done = 'winner'
  let contact = {
     'jj dd': 55454,
 
 }
-contact[hui] = 55;
- console.log(`${[hui]} : ${[contact[hui]]} `)
+contact[done] = 55;
+ console.log(`${[done]} : ${[contact[done]]} `)
