@@ -2,7 +2,6 @@ function findNumber(input) {
     let obj = {};
     let sorted = input.sort((a, b) => a.localeCompare(b))
 
-
     sorted.forEach(x => {
         if (!obj[x[0]]) {
             obj[x[0]] = [x]
@@ -17,7 +16,6 @@ function findNumber(input) {
             console.log(`  ${item}`);
         });
     });
-
 }
 
 findNumber(['Appricot : 20.4',
