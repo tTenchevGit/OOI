@@ -55,7 +55,7 @@ let testCases = [
     { input: ['apple => 500', 'Apple => 1500'], output: ['Apple => 2'] }, // Input with duplicate names but different casing
 ];
 
-// Run test cases
+
 for (let i = 0; i < testCases.length; i++) {
     let { input, output } = testCases[i];
     let generatedOutput = juice(input);
