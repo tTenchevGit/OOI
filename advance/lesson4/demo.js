@@ -4,7 +4,7 @@ function juice(input) {
 
     for (let el of input) {
         let [name, quantity] = el.split(' => ');
-        quantity = parseFloat(quantity); // Using parseFloat to handle decimal quantities
+        quantity = parseFloat(quantity); 
 
         if (isNaN(quantity) || quantity <= 0) {
             // Skip invalid or negative quantities
