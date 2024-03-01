@@ -7,7 +7,7 @@ function juice(input) {
         quantity = parseFloat(quantity); 
 
         if (isNaN(quantity) || quantity <= 0) {
-            // Skip invalid or negative quantities
+            
             continue;
         }
 
