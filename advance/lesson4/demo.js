@@ -11,7 +11,7 @@ function juice(input) {
             continue;
         }
 
-        if (quantity >= 1000 && !obj[name]) { // Modified condition to include quantities equal to 1000
+        if (quantity >= 1000 && !obj[name]) { 
             obj[name] = quantity;
         } else if (obj[name]) {
             obj[name] += quantity;
