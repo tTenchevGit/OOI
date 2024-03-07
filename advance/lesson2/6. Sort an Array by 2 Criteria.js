@@ -3,7 +3,7 @@ function sort(input) {
     
         let lengthComparison = a.length - b.length;
     
-        return lengthComparison !== 0 ? lengthComparison : a.localeCompare(b);a //turnary operator
+        return lengthComparison !== 0 ? lengthComparison : a.localeCompare(b);a 
     });
 
     console.log(result.join("\n"));
