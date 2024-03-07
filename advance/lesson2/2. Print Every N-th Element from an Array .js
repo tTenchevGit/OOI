@@ -6,6 +6,6 @@ function printElement(arrStr) {
         }
     });
 }
-
+//example
 printElement(['5', '20', '31', '4', '20', '2']);
 printElement(['dsa', 'asd', 'test', 'tset', '2'])
