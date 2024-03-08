@@ -7,5 +7,3 @@ function solve(arr) {
 }
 console.log(solve([2, 7, 8, 9]));
 
-// const result = solve([0, -5, 6]);
-// console.log(result);
