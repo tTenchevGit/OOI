@@ -28,7 +28,7 @@ const visualizeLoadingBar = (percentage) => {
     }
 };
 
-// Examples
+
 console.log(visualizeLoadingBar(20));
 console.log(visualizeLoadingBar(30));
 console.log(visualizeLoadingBar(40));
