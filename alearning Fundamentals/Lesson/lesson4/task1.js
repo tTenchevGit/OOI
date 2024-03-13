@@ -27,13 +27,7 @@ const solve = (input) => {
         }
     }
   
-       // if (num % 2 === 1 && oddMin > num) {
-     //       oddMin = num;
-      //  } else if (num % 2 === 1 && oddMax < num) {
-     //       oddMax = num;
-     //   } 
-     //   if (num % 2 === 0 &&  evenMin > num) {
-     //       evenMin = num;
+       
    //     } else if (num % 2 === 0 && evenMax < num) {
    //         evenMax = num;
    //     }
