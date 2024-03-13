@@ -28,10 +28,7 @@ const solve = (input) => {
     }
   
        
-   //     } else if (num % 2 === 0 && evenMax < num) {
-   //         evenMax = num;
-   //     }
-   // }
+   
     console.log('oddSum = ' + oddSum.toFixed(2))
     if(oddMin != Number.MAX_SAFE_INTEGER){
         console.log('oddMin = ' + oddMin.toFixed(2))
