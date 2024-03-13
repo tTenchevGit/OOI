@@ -26,13 +26,7 @@ const solve = (input) => {
             }
         }
     }
-  //  for (let i = 0; i < n; i++) {
-       // let num = Number(input.shift());
-       // if (num % 2 === 1) {
-      //      oddSum += num;
-      //  } else if(num % 2 === 0){
-      //      evenSum += num;
-//}
+  
        // if (num % 2 === 1 && oddMin > num) {
      //       oddMin = num;
       //  } else if (num % 2 === 1 && oddMax < num) {
