@@ -11,4 +11,4 @@ function solve(input) {
     }
     console.log(bigNum);
 }
-solve(['3', "140", "4", '85'])
+solve(['3', "140", "5", '85'])
