@@ -33,5 +33,5 @@ function solve(input) {
     console.log(`Sum of all non-prime numbers is: ${notPrime}`);
 }
 
-// Example usage:
+
 solve([30, 83, 33, -1, 20, 'stop']);
