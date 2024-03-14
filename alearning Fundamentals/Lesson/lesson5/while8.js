@@ -14,4 +14,4 @@ function solve(input) {
     console.log(`${name} graduated. Average grade ${average.toFixed(2)}`)
 
 }
-solve(['John', "4", "5", "4", "4", "5", "4", "4", "5", "4", "4", "5", "4"])
+solve(['John', "4", "5", "4", "4", "5", "4", "4", "5", "4", "4", "5", "5"])
