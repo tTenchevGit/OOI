@@ -16,4 +16,4 @@ function solve(array) {
      }
      console.log(resultArr.join(' '));
   }
-  solve([2, 1, 2, 2, 3, 3, 2, 2, 2, ,1]);
+  solve([2, 1, 2, 2, 3, 3, 2, 2, 2]);
