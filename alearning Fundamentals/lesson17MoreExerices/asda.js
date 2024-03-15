@@ -16,8 +16,7 @@ function splitArrays(arr) {
     console.log('First Array:', wordsArray);
     console.log('Rest Array:', restArray);
 
-    // You can return the arrays if needed
-    // return [wordsArray, restArray];
+    
 }
 
 
