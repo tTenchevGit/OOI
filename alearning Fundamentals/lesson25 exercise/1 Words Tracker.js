@@ -1,7 +1,6 @@
 function solve(input) {
     let arrayOfWords = input.shift().split(' ');
     let obj = {};
-    // console.log(arrayOfWords);
     arrayOfWords.forEach(el => {
         let count = 0;
         input.forEach(x => {
