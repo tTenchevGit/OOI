@@ -13,7 +13,7 @@ function secret(input) {
                     message = reverse(message, action);
                     console.log(message);
                 } else {
-                    console.log('error');; // return original message if action not found
+                    console.log('error');;
                 }
 
                 break;
