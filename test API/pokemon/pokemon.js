@@ -8,9 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 return responce.json();
             })
-            .then(data => console.log(data.weight, data.height))
+            .then(data => {
+                const newItem = document.createElement('li')
+                newItem.innerText = `picathcu weight is ${data.weight}\npicathcu height is ${data.height}`
+                document.body.appendChild(newItem)
+                console.log(data.weight, data.height)
+            })
             .catch(error => {
-                console.error('asdadasdasd', error);
+                console.error('catched', error);
             });
-});
+    });
 }); 
