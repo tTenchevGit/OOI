@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return res.json();
         })
             .then(data => {
-                let john = data.results[0];
+                let john = data.results[0];   
                 let array = Object.entries(john);
                 result.push(array[3].join(': '));
                 newItem.innerText = result.join('\n')
