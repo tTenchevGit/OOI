@@ -22,9 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             
             alert('The entered bus number is not valid. Please enter a valid bus number.');
-            // const elementPnot = document.createElement('p');
-            //             elementPnot.innerText = 'Not on this line';
-            //             document.body.appendChild(elementPnot);
         }
     });
 });
