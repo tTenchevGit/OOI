@@ -22,6 +22,11 @@ function attachEvents() {
             })
             .catch(err => console.log(err.message))
     });
+
+    // taking value outside then
+    selectElement.addEventListener('change', (e) => {
+        console.log(e.target.value);
+    });
 }
 
 attachEvents();
