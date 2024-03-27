@@ -4,7 +4,7 @@ async function getName(id) {
         let char = await responce.json();
 
         let shipResponce = await fetch(char.starships[0]);
-        let ship = await shipResponce.json();
+        let ships = await shipResponce.json();
     } catch (error) {
         console.log(error.message);
     }
