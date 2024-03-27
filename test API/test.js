@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 result.push(array[3].join(': '));
                 newItem.innerText = result.join('\n')
                 document.body.appendChild(newItem);
-                console.log(data.results[0].gender);
+                console.log(data.results[1].gender);
             })
             .catch(error => {
                 console.error('asdadasdasd', error);
