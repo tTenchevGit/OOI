@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rauting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a id="change">Next</a>
+    </div>
+   
+    <section id="home">
+      <h2>Home Section</h2>
+      <p>This is the home section.</p>
+      <div id="root">asdasdasdsa</div>
+    </section>
+
+    <section id="news">
+      <h2>News Section</h2>
+      <p>This is the news section.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Section</h2>
+      <p>This is the contact section.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Section</h2>
+      <p>This is the about section.</p>
+    </section>
+
+    <script>
+    const sections = ["home", "news", "contact", "about"];
+    let currentIndex = 0;
+
+    document.getElementById("change").addEventListener("click", () => {
+        // Increment the currentIndex. If it exceeds the length of the sections array, reset it to 0.
+        currentIndex = (currentIndex + 1) % sections.length;
+
+        // Update the location.hash to the current section
+        location.hash = sections[currentIndex];
+    });
+    </script>
+
+<script>
+    let contactSection = document.getElementById('contact');
+    const rootEl= document.getElementById('root')
+    const router = {
+        '#home': '<p>About us sss</p>',
+        '#news': '<p>yes</p>',
+        '#contact': '<p>Anada</p>',
+        '#about': '<p>Amada</p>',
+    }
+   window.addEventListener('hashchange', e =>{
+    // console.log(e);
+    let newParagraph = document.createElement('p');
+    console.log(location.hash);
+    const newDiv = document.createElement('div')
+    rootEl.innerHTML = router[location.hash]
+    newParagraph.innerText = router[location.hash]
+    contactSection.appendChild(newParagraph);
+   });
+    document.getElementById("new").addEventListener("click", () => {
+        
+    });
+    </script>
+  </body>
+</html>
