@@ -3,10 +3,10 @@ function neigbours(matrix) {
 
     matrix.forEach((row, i) => {
         row.forEach((el, j) => {
-            if (el === row[j + 1]) { // find the neigbours, left and right on the same row
+            if (el === row[j + 1]) { 
                 pairs++;
             }
-            if (matrix[i + 1] && el === matrix[i + 1][j]) { // find the neigbouts from the row above and bellow
+            if (matrix[i + 1] && el === matrix[i + 1][j]) {
                 pairs++
             }
             if (matrix[i + 1] && (el === matrix[i + 1][j - 1] || el === matrix[i + 1][j + 1])) { // find the diagonal neighbours
