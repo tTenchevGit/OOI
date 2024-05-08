@@ -8,7 +8,7 @@ const passwordCheker = (password) => {
         if (/[0-9]/.test(password[i])) {
             digitCount++;
         } else if (!/[a-zA-Z]/.test(password[i])) {
-            result.push('Password must consist only of letters and digits');
+            result.push('Password must consist only of letters and digits!');
         }
 
     }
