@@ -10,7 +10,7 @@ function splitArrays(arr) {
     // Split the first string into an array of words
     let wordsArray = firstArray[0].split(' ');
 
-    // Second array with the rest of the strings
+   
     let restArray = arr;
 
     console.log('First Array:', wordsArray);
