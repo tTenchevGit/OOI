@@ -12,7 +12,6 @@ function neighborhoodsResidents(arrayOfStrings) {
             if (!obj[place]) {
                 obj[place] = [];
             }
-
             obj[place].push(name);
         }
     });
